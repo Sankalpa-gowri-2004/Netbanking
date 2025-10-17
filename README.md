@@ -119,29 +119,30 @@ All other config (DB URL, driver, Hibernate options, mail SMTP, etc.) is set in 
 
 ## 📁 Project Structure
 
-📦 NetBanking
-├── 📄 README.md
-├── 📦 netbanking_backend.zip   # Backend (Spring Boot)
-├── 📦 netbanking_frontend.zip  # Frontend (Oracle JET)
+📦 NetBanking  
+├── 📄 README.md  
+├── 📦 netbanking_backend.zip   # Backend (Spring Boot)  
+├── 📦 netbanking_frontend.zip  # Frontend (Oracle JET)  
 
-Inside **netbanking_backend**/
-src/
- ├── main/java/com/oracle/internetBanking/
- │    ├── controller/     # REST API endpoints
- │    ├── service/        # Business logic
- │    ├── repository/     # JPA repositories
- │    ├── entities/       # DB entities
- │    └── config/         # JWT & security setup
- ├── main/resources/
- │    └── application.properties
- └── pom.xml  
+### Inside `netbanking_backend/`
 
-Inside **netbanking_frontend**/
 src/
- ├── css/                 # Styles and themes
- ├── js/
- │    ├── viewModels/     # Page logic
- │    ├── views/          # HTML views
- │    ├── services/       # API calls
- └── package.json         # Dependencies & scripts
+├── main/java/com/oracle/internetBanking/
+│   ├── controller/     # REST API endpoints
+│   ├── service/        # Business logic
+│   ├── repository/     # JPA repositories
+│   ├── entities/       # Database entities
+│   └── config/         # JWT & security setup
+├── main/resources/
+│   └── application.properties
+└── pom.xml
+### Inside `netbanking_frontend/`
+
+src/
+├── css/                 # Styles and themes
+├── js/
+│   ├── viewModels/     # Page logic
+│   ├── views/          # HTML views
+│   ├── services/       # API calls
+└── package.json         # Dependencies & scripts
 
