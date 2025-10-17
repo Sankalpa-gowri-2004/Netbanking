@@ -30,10 +30,11 @@ It enables users to manage accounts, perform transactions, apply for loans and c
    - [MySQL](https://www.mysql.com/)
 2. **Clone the repository** and navigate to the backend folder:
     cd netBanking_backend
-3. **Configure environment variables** (see Configuration section).
-4. **Install MySQL** and create a database named `netbanking`.
+    cd internetbanking
+4. **Configure environment variables** (see Configuration section).
+5. **Install MySQL** and create a database named `netbanking`.
    CREATE DATABASE netbanking;
-5. in **Mysql** u need to provide roles to the user. example- after sign up, each user is considered as customer but in mysql u need to update role to admin after checking their id.
+6. in **Mysql** u need to provide roles to the user. example- after sign up, each user is considered as customer but in mysql u need to update role to admin after checking their id.
    select * from users; (to view id of user that needs to be made as admin)
    UPDATE users SET role = 'admin' WHERE user_id = 1;
 7. Configure **environment:**
@@ -48,9 +49,10 @@ Edit src/main/resources/application.properties with your database credentials an
 1. **Install Node.js v16+** and npm.
 2. **Navigate to the frontend folder:**
     cd netbanking_frontend
-3. **Install dependencies:**
+    cd ib_frontend
+4. **Install dependencies:**
     npm install
-4. **Run the app in development mode:**
+5. **Run the app in development mode:**
     ojet serve
    The UI app opens in your browser (defaults to Chrome).
 **Remove old dependencies (if issues occur)**:
@@ -124,7 +126,7 @@ All other config (DB URL, driver, Hibernate options, mail SMTP, etc.) is set in 
 ├── 📦 netbanking_backend.zip   # Backend (Spring Boot)  
 ├── 📦 netbanking_frontend.zip  # Frontend (Oracle JET)  
 
-### Inside `netbanking_backend/`
+### Inside `internetbanking/`
 src/
 
 ├── main/java/com/oracle/internetBanking/
@@ -144,7 +146,7 @@ src/
 │   └── application.properties
 
 └── pom.xml
-### Inside `netbanking_frontend/`
+### Inside `ib_frontend/`
 
 src/
 
