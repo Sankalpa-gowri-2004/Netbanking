@@ -125,24 +125,39 @@ All other config (DB URL, driver, Hibernate options, mail SMTP, etc.) is set in 
 ├── 📦 netbanking_frontend.zip  # Frontend (Oracle JET)  
 
 ### Inside `netbanking_backend/`
-'''text
 src/
+
 ├── main/java/com/oracle/internetBanking/
+
 │   ├── controller/     # REST API endpoints
+
 │   ├── service/        # Business logic
+
 │   ├── repository/     # JPA repositories
+
 │   ├── entities/       # Database entities
+
 │   └── config/         # JWT & security setup
+
 ├── main/resources/
+
 │   └── application.properties
+
 └── pom.xml
 ### Inside `netbanking_frontend/`
 
 src/
+
 ├── css/                 # Styles and themes
+
 ├── js/
+
 │   ├── viewModels/     # Page logic
+
 │   ├── views/          # HTML views
+
 │   ├── services/       # API calls
+
 └── package.json         # Dependencies & scripts
+
 
