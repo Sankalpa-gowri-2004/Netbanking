@@ -28,7 +28,7 @@ It enables users to manage accounts, perform transactions, apply for loans and c
    - [Java 17+](https://adoptium.net/)
    - [Maven](https://maven.apache.org/)
    - [MySQL](https://www.mysql.com/)
-2. **Clone the repository** and navigate to the backend folder:
+2. **Clone the repository**,unzip it and navigate to the backend folder:
     cd backend
 4. **Configure environment variables** (see Configuration section).
 5. **Install MySQL** and create a database named `netbanking`.
@@ -46,7 +46,7 @@ Edit src/main/resources/application.properties with your database credentials an
 ### 🖥️ Frontend (Oracle JET Web App)
 
 1. **Install Node.js v16+** and npm.
-2. **Navigate to the frontend folder:**
+2. **unzip and Navigate to the frontend folder:**
     cd frontend/myApp
 4. **Install dependencies:**
     npm install
@@ -121,8 +121,8 @@ All other config (DB URL, driver, Hibernate options, mail SMTP, etc.) is set in 
 
 📦 NetBanking  
 ├── 📄 README.md  
-├── 📦 backend.z   # Backend (Spring Boot)  
-├── 📦 frontend.z  # Frontend (Oracle JET- inside myApp)  
+├── 📦 backend.7z   # Backend (Spring Boot)  
+├── 📦 frontend.7z  # Frontend (Oracle JET- inside myApp)  
 
 ### Inside `backend/`
 src/
