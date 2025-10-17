@@ -29,8 +29,7 @@ It enables users to manage accounts, perform transactions, apply for loans and c
    - [Maven](https://maven.apache.org/)
    - [MySQL](https://www.mysql.com/)
 2. **Clone the repository** and navigate to the backend folder:
-    cd netBanking_backend
-    cd internetbanking
+    cd backend
 4. **Configure environment variables** (see Configuration section).
 5. **Install MySQL** and create a database named `netbanking`.
    CREATE DATABASE netbanking;
@@ -48,8 +47,7 @@ Edit src/main/resources/application.properties with your database credentials an
 
 1. **Install Node.js v16+** and npm.
 2. **Navigate to the frontend folder:**
-    cd netbanking_frontend
-    cd ib_frontend
+    cd frontend/myApp
 4. **Install dependencies:**
     npm install
 5. **Run the app in development mode:**
@@ -123,10 +121,10 @@ All other config (DB URL, driver, Hibernate options, mail SMTP, etc.) is set in 
 
 📦 NetBanking  
 ├── 📄 README.md  
-├── 📦 netbanking_backend.zip   # Backend (Spring Boot)  
-├── 📦 netbanking_frontend.zip  # Frontend (Oracle JET)  
+├── 📦 backend.z   # Backend (Spring Boot)  
+├── 📦 frontend.z  # Frontend (Oracle JET- inside myApp)  
 
-### Inside `internetbanking/`
+### Inside `backend/`
 src/
 
 ├── main/java/com/oracle/internetBanking/
@@ -146,7 +144,7 @@ src/
 │   └── application.properties
 
 └── pom.xml
-### Inside `ib_frontend/`
+### Inside `myApp/`
 
 src/
 
