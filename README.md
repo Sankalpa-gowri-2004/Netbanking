@@ -1,5 +1,5 @@
 # 💳 Netbanking Platform
-NETbanking Platform is a full-stack web app for secure online banking. . Built with Java Spring Boot and Oracle JET. Includes admin dashboard, user authentication, notifications and role-based access.
+Netbanking Platform is a full-stack web app for secure online banking. . Built with Java Spring Boot and Oracle JET. Includes admin dashboard, user authentication, notifications and role-based access.
 
 ## 🌐 Overview
 
