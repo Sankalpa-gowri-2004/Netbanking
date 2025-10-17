@@ -57,6 +57,9 @@ Internet Banking Platform is a full-stack web application offering a comprehensi
     ```
    The UI app opens in your browser (defaults to Chrome).
 
+   **Remove old dependencies (if issues occur)**:
+   '''Remove-Item -Recurse -Force node_modules, package-lock.json '''
+
 ## Usage
 
 - **User login and registration** is available at the root page of the frontend app.
