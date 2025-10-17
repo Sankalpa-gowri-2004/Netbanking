@@ -29,16 +29,16 @@ It enables users to manage accounts, perform transactions, apply for loans and c
    - [Maven](https://maven.apache.org/)
    - [MySQL](https://www.mysql.com/)
 2. **Clone the repository**,unzip it and navigate to the backend folder:
-    cd backend
-4. **Configure environment variables** (see Configuration section).
-5. **Install MySQL** and create a database named `netbanking`.
+   cd backend
+3. **Configure environment variables** (see Configuration section).
+4. **Install MySQL** and create a database named `netbanking`.
    CREATE DATABASE netbanking;
-6. in **Mysql** u need to provide roles to the user. example- after sign up, each user is considered as customer but in mysql u need to update role to admin after checking their id.
+5. in **Mysql** u need to provide roles to the user. example- after sign up, each user is considered as customer but in mysql u need to update role to admin after checking their id.
    select * from users; (to view id of user that needs to be made as admin)
    UPDATE users SET role = 'admin' WHERE user_id = 1;
-7. Configure **environment:**
+6. Configure **environment:**
 Edit src/main/resources/application.properties with your database credentials and mail settings.
-8. **Build and run the backend:**
+7. **Build and run the backend:**
     mvn clean install
     mvn spring-boot:run
    The API will start on the port defined in your configuration (defaults to `8080`).
@@ -47,10 +47,10 @@ Edit src/main/resources/application.properties with your database credentials an
 
 1. **Install Node.js v16+** and npm.
 2. **unzip and Navigate to the frontend folder:**
-    cd frontend/myApp
-4. **Install dependencies:**
+   cd frontend/myApp
+3. **Install dependencies:**
     npm install
-5. **Run the app in development mode:**
+4. **Run the app in development mode:**
     ojet serve
    The UI app opens in your browser (defaults to Chrome).
 **Remove old dependencies (if issues occur)**:
@@ -73,7 +73,7 @@ Edit src/main/resources/application.properties with your database credentials an
 
 ### Backend Environment Variables
 
-These can be set in your shell or an `.env` file (use a tool like [direnv](https://direnv.net/) or set in your IDE):
+These can be set in your shell or an `.env` file (set in your IDE):
 
 set these up before running backend:
 - **Database Configuration:**
@@ -102,15 +102,12 @@ All other config (DB URL, driver, Hibernate options, mail SMTP, etc.) is set in 
     - Spring Boot (Web, Data JPA, Security)
     - Spring Security, JWT for authentication/authorization
     - MySQL (relational database)
-    - Thymeleaf (optional for server-side views/templates)
     - Lombok (for boilerplate reduction)
-    - JavaMail (for email/OTP)
     - JUnit, Spring Boot Test (for testing)
 - **Frontend:**
     - Oracle JET (JavaScript Extension Toolkit)
     - Node.js, npm
     - MVVM architecture
-    - Karma, Mocha or Jest (testing) [tooling provided]
     - SCSS/CSS
 - **Tooling:**
     - Maven (Java build & dependency management)
